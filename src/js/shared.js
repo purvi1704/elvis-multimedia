@@ -51,7 +51,6 @@
   ];
 
   // ── PORTFOLIO DATA ─────────────────────────────────────────────────────────
-  const A = 'public/assets/refs/';
   const B = 'public/assets/';
   const CATEGORIES = [
     {id:'all',label:'All'},{id:'weddings',label:'Weddings'},
@@ -93,12 +92,12 @@
      location:'Private Estate, Alibaug',year:'2025',featured:false,
      description:'Grand interior architecture with warm orb lighting — staircase curves and reflective steel.'},
     {id:'p9',title:'Wedding Film',category:'film',categoryLabel:'Wedding Films',
-     mediaType:'video',src:A+'elvis_video_1.mp4',
+     mediaType:'video',src:B+'elvis_video_1.mp4',
      poster:B+'587306007_18098091982889785_4183619969143453930_n.jpg',
      location:'Mumbai',year:'2026',featured:true,
      description:'A feature cinematic wedding edit — warmth, vows, and light. Colour graded in-house.'},
     {id:'p10',title:'Coastal Wedding Film',category:'film',categoryLabel:'Wedding Films',
-     mediaType:'video',src:A+'elvis_video_2.mp4',
+     mediaType:'video',src:B+'elvis_video_2.mp4',
      poster:B+'710868667_18593570341054127_1199420393040945820_n.jpg',
      location:'Coastal India',year:'2026',featured:true,
      description:'A narrative story reel capturing mood and motion of a coastal wedding day.'}
@@ -468,8 +467,9 @@
       if(item.mediaType==='video'){
         var vid=document.createElement('video');
         vid.src=item.src; vid.controls=true; vid.autoplay=true; vid.muted=true;
+        vid.setAttribute('playsinline','');
         if(item.poster) vid.poster=item.poster;
-        vid.style.cssText='width:100%;height:100%;object-fit:cover;display:block;';
+        vid.style.cssText='width:100%;height:100%;object-fit:contain;background:var(--forest-dark);display:block;';
         lbMedia.appendChild(vid);
       } else {
         var img=document.createElement('img');
@@ -509,7 +509,7 @@
     var box = document.getElementById('main-showreel-box');
     if (!btn || !box) return;
     btn.addEventListener('click', function(){
-      box.innerHTML = '<video autoplay controls style="width:100%;height:100%;object-fit:contain;background:var(--forest-dark);" aria-label="Elvis Multimedia — Showreel"><source src="public/assets/refs/elvis_video_1.mp4" type="video/mp4"/></video>';
+      box.innerHTML = '<video autoplay controls playsinline style="width:100%;height:100%;object-fit:contain;background:var(--forest-dark);" aria-label="Elvis Multimedia — Showreel"><source src="public/assets/elvis_video_1.mp4" type="video/mp4"/></video>';
     });
   }
 

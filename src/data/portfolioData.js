@@ -17,7 +17,6 @@ export const PORTFOLIO_CATEGORIES = [
   { id: 'film',      label: 'Film' }
 ];
 
-const A = 'public/assets/refs/';
 const BASE = 'public/assets/';
 
 export const PORTFOLIO_ITEMS = [
@@ -139,7 +138,7 @@ export const PORTFOLIO_ITEMS = [
     category: 'film',
     categoryLabel: 'Wedding Films',
     mediaType: 'video',
-    src: A + 'elvis_video_1.mp4',
+    src: BASE + 'elvis_video_1.mp4',
     poster: BASE + '587306007_18098091982889785_4183619969143453930_n.jpg',
     location: 'Mumbai',
     year: '2026',
@@ -154,7 +153,7 @@ export const PORTFOLIO_ITEMS = [
     category: 'film',
     categoryLabel: 'Wedding Films',
     mediaType: 'video',
-    src: A + 'elvis_video_2.mp4',
+    src: BASE + 'elvis_video_2.mp4',
     poster: BASE + '710868667_18593570341054127_1199420393040945820_n.jpg',
     location: 'Coastal India',
     year: '2026',

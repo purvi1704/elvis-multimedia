@@ -280,7 +280,7 @@ function initShowreel() {
     showreelBox.innerHTML = `
       <video
         id="showreel-video"
-        src="./assets/refs/elvismultimedia_'s Post.mp4"
+        src="public/assets/elvis_video_1.mp4"
         autoplay
         controls
         playsinline

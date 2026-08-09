@@ -17,9 +17,8 @@ export const PORTFOLIO_CATEGORIES = [
   { id: 'film',      label: 'Film' }
 ];
 
-// Asset base path — all HTML pages sit at project root, assets at ./public/assets/
-const A = './public/assets/refs/';
-const BASE = './public/assets/';
+const A = 'public/assets/refs/';
+const BASE = 'public/assets/';
 
 export const PORTFOLIO_ITEMS = [
   {
@@ -28,7 +27,7 @@ export const PORTFOLIO_ITEMS = [
     category: 'weddings',
     categoryLabel: 'Wedding Photography',
     mediaType: 'image',
-    src: A + '587306007_18098091982889785_4183619969143453930_n.jpg',
+    src: BASE + '587306007_18098091982889785_4183619969143453930_n.jpg',
     location: 'Mumbai',
     year: '2025',
     description: "A dramatic interplay of natural window backlight and interior shadow. The bride's silhouette reaches for her gown — a timeless frame that speaks before words do.",
@@ -42,7 +41,7 @@ export const PORTFOLIO_ITEMS = [
     category: 'weddings',
     categoryLabel: 'Wedding Photography',
     mediaType: 'image',
-    src: A + '587266488_18098091991889785_8715925391744596365_n.jpg',
+    src: BASE + '587266488_18098091991889785_8715925391744596365_n.jpg',
     location: 'Mumbai',
     year: '2025',
     description: 'Beaded lace, a crystal crown, a bangled wrist. Macro optical capture of the quiet intimacy before the celebration begins.',
@@ -56,7 +55,7 @@ export const PORTFOLIO_ITEMS = [
     category: 'weddings',
     categoryLabel: 'Wedding Details',
     mediaType: 'image',
-    src: A + '587291741_18098091970889785_4928293984148159496_n.jpg',
+    src: BASE + '587291741_18098091970889785_4928293984148159496_n.jpg',
     location: 'Private Estate, Mumbai',
     year: '2025',
     description: 'A bridal gown suspended under a cascade of chandelier light on a grand staircase. Architecture in dialogue with fashion.',
@@ -70,7 +69,7 @@ export const PORTFOLIO_ITEMS = [
     category: 'people',
     categoryLabel: 'Portrait',
     mediaType: 'image',
-    src: A + '474475697_18484168840033140_3309807940444514748_n.jpg',
+    src: BASE + '474475697_18484168840033140_3309807940444514748_n.jpg',
     location: 'Mumbai',
     year: '2025',
     description: 'Warm key-light portraiture with embellished ivory couture. Soft directional modifiers, natural warmth, and genuine elegance.',
@@ -84,7 +83,7 @@ export const PORTFOLIO_ITEMS = [
     category: 'weddings',
     categoryLabel: 'Wedding Photography',
     mediaType: 'image',
-    src: A + '710868667_18593570341054127_1199420393040945820_n.jpg',
+    src: BASE + '710868667_18593570341054127_1199420393040945820_n.jpg',
     location: 'Coastal Goa',
     year: '2026',
     description: 'A coastal ceremony at golden hour — palm trees, a trailing veil, warm backlit sun. The most honest of frames.',
@@ -98,7 +97,7 @@ export const PORTFOLIO_ITEMS = [
     category: 'people',
     categoryLabel: 'Pre-Wedding',
     mediaType: 'image',
-    src: A + '713043629_18593570314054127_582078363109332409_n.jpg',
+    src: BASE + '713043629_18593570314054127_582078363109332409_n.jpg',
     location: 'Coastal Goa',
     year: '2026',
     description: 'Pre-wedding editorial under open blue sky. Natural light, genuine connection, no artifice.',
@@ -141,7 +140,7 @@ export const PORTFOLIO_ITEMS = [
     categoryLabel: 'Wedding Films',
     mediaType: 'video',
     src: A + 'elvis_video_1.mp4',
-    poster: A + '587306007_18098091982889785_4183619969143453930_n.jpg',
+    poster: BASE + '587306007_18098091982889785_4183619969143453930_n.jpg',
     location: 'Mumbai',
     year: '2026',
     description: 'A feature cinematic wedding edit — warmth, vows, and light. Colour graded in-house.',
@@ -156,7 +155,7 @@ export const PORTFOLIO_ITEMS = [
     categoryLabel: 'Wedding Films',
     mediaType: 'video',
     src: A + 'elvis_video_2.mp4',
-    poster: A + '710868667_18593570341054127_1199420393040945820_n.jpg',
+    poster: BASE + '710868667_18593570341054127_1199420393040945820_n.jpg',
     location: 'Coastal India',
     year: '2026',
     description: 'A narrative story reel capturing the mood and motion of a coastal wedding day.',

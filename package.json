@@ -1,0 +1,19 @@
+{
+  "name": "elvis-multimedia",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Elvis Multimedia - Photography, Videography & Visual Production House based in Mumbai, India. Powered by Godnel's Studio Since 1993.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "firebase deploy --only hosting"
+  },
+  "dependencies": {
+    "firebase": "^10.12.0"
+  },
+  "devDependencies": {
+    "vite": "^5.2.0"
+  }
+}

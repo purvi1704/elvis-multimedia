@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Showreel — Elvis Multimedia | Film & Visual Production, Mumbai</title>
+  <meta name="description" content="Watch the Elvis Multimedia showreel — cinematic wedding films, brand films and visual production from Mumbai."/>
+  <link rel="icon" type="image/jpeg" href="public/assets/elvis_logo_badge.jpg"/>
+  <link rel="stylesheet" href="src/css/styles.css"/>
+  <style>
+    .reel-list{display:flex;flex-direction:column;gap:24px;}
+    .reel-item{background:var(--forest-mid);border:1px solid var(--taupe-border);border-radius:var(--r-md);overflow:hidden;transition:border-color var(--t-mid),transform var(--t-mid);}
+    .reel-item:hover{border-color:var(--brass-alpha);transform:translateY(-2px);}
+    .reel-item video{width:100%;display:block;max-height:360px;object-fit:cover;background:var(--forest-dark);}
+    .reel-item-info{padding:20px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+    .reel-item-info h3{font-size:1.1rem;color:var(--cream);}
+    .reel-item-info .tag{font-size:.75rem;color:var(--taupe-light);letter-spacing:.1em;text-transform:uppercase;}
+    .video-note{background:var(--brass-alpha);border:1px solid var(--brass-dark);border-radius:var(--r-sm);padding:16px 20px;margin-top:20px;font-size:.82rem;color:var(--brass-light);line-height:1.6;}
+    .video-note strong{color:var(--brass);}
+  </style>
+</head>
+<body>
+  <div id="nav-root"></div>
+
+  <section class="showreel-hero section-lg" style="padding-top:calc(var(--nav-h) + 60px);">
+    <div class="showreel-caption" data-reveal>
+      <p class="t-label mb-md" style="justify-content:center;">Elvis Multimedia</p>
+      <h1 style="font-size:clamp(2.5rem,5vw,5rem);font-weight:300;text-align:center;margin-bottom:16px;">
+        See it <em>in motion.</em>
+      </h1>
+      <p style="font-family:var(--font-serif);font-size:1.2rem;color:var(--cream-dim);text-align:center;">
+        Creating memories worth keeping.
+      </p>
+    </div>
+
+    <div style="width:94%;max-width:1100px;" data-reveal data-delay="120">
+      <!--
+        ╔══════════════════════════════════════════════════════════════╗
+        ║  SHOWREEL VIDEO — HOW TO INSERT YOUR VIDEO                  ║
+        ║  ──────────────────────────────────────────────────────────  ║
+        ║  OPTION A — YouTube embed:                                  ║
+        ║    Uncomment the iframe block below.                        ║
+        ║    Replace VIDEO_ID with your YouTube video ID.             ║
+        ║                                                              ║
+        ║  OPTION B — Vimeo embed:                                    ║
+        ║    Same as above with your Vimeo embed URL.                 ║
+        ║                                                              ║
+        ║  OPTION C — Local video:                                    ║
+        ║    Replace the <source src="..."> path below.               ║
+        ╚══════════════════════════════════════════════════════════════╝
+
+        OPTION A — YouTube (uncomment to use):
+        <div style="position:relative;width:100%;aspect-ratio:16/9;">
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&rel=0&modestbranding=1"
+            title="Elvis Multimedia Showreel"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            style="position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:var(--r-lg);"
+          ></iframe>
+        </div>
+      -->
+
+      <div class="showreel-video-container" id="main-showreel-box">
+        <div class="showreel-placeholder" id="showreel-placeholder">
+          <img src="public/assets/elvis_logo_badge.jpg" alt="Elvis Multimedia"
+               style="width:80px;height:80px;border-radius:50%;object-fit:cover;border:1.5px solid var(--brass);opacity:.6;"/>
+          <button class="showreel-play-ring" id="showreel-play-btn" aria-label="Play Showreel">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+          </button>
+          <p class="showreel-placeholder-text">Elvis Multimedia — Showreel</p>
+          <p style="font-size:.72rem;color:var(--taupe);text-align:center;max-width:300px;line-height:1.6;">
+            See HTML comments above to connect a YouTube, Vimeo or local video.
+          </p>
+        </div>
+      </div>
+
+      <div class="video-note">
+        <strong>⚙ For the web team:</strong> To add the main showreel, see the HTML comments in <code>showreel.html</code>. Use YouTube embed (Option A), Vimeo (Option B), or a local MP4 (Option C). The films below are available to preview now.
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--forest);">
+    <div class="container">
+      <p class="t-label mb-md" data-reveal>Recent Films</p>
+      <h2 class="t-h2 mb-lg" data-reveal>Cinematic edits<br><em>from the archive.</em></h2>
+      <div class="reel-list">
+
+        <div class="reel-item" data-reveal>
+          <video src="public/assets/refs/elvismultimedia_'s Post.mp4"
+                 poster="public/assets/refs/587306007_18098091982889785_4183619969143453930_n.jpg"
+                 controls preload="none" aria-label="Wedding Film — Cinematic Edit"></video>
+          <div class="reel-item-info">
+            <div><h3>Wedding Film — Cinematic Edit</h3><span class="tag">Mumbai · 2026</span></div>
+            <span class="tag">Wedding Films</span>
+          </div>
+        </div>
+
+        <div class="reel-item" data-reveal data-delay="80">
+          <video src="public/assets/refs/elvismultimedia_'s Post (1).mp4"
+                 poster="public/assets/refs/710868667_18593570341054127_1199420393040945820_n.jpg"
+                 controls preload="none" aria-label="Coastal Wedding Film — Story Reel"></video>
+          <div class="reel-item-info">
+            <div><h3>Coastal Wedding — Story Reel</h3><span class="tag">Coastal India · 2026</span></div>
+            <span class="tag">Wedding Films</span>
+          </div>
+        </div>
+
+        <div class="reel-item" data-reveal data-delay="160">
+          <video src="public/assets/refs/AQMzBzM0zFRI8V0cwbKbVassyXzmY1KOEdq1sbRtWthGj5kybq1w1luJ1Ylk_zv-e_Ale1B5gsgINixewcxE-lV5wDip9uULhdn38oU.mp4"
+                 poster="public/assets/refs/474475697_18484168840033140_3309807940444514748_n.jpg"
+                 controls preload="none" aria-label="Short Film — Highlights"></video>
+          <div class="reel-item-info">
+            <div><h3>Short Film — Highlights</h3><span class="tag">Mumbai · 2025</span></div>
+            <span class="tag">Event Films</span>
+          </div>
+        </div>
+
+        <div class="reel-item" data-reveal data-delay="240">
+          <video src="public/assets/refs/AQP5g57tZWhuwtx_gLivoWi2VE_ChT2iHszAhXUNUb6aBatl8vy3tmiImAqlwbdFlfoTxx-V6fwz10cn-TqFVxSJieEjuF2Z0YQ-nrs.mp4"
+                 poster="public/assets/refs/713043629_18593570314054127_582078363109332409_n.jpg"
+                 controls preload="none" aria-label="Cinematic Short"></video>
+          <div class="reel-item-info">
+            <div><h3>Cinematic Short</h3><span class="tag">Coastal India · 2026</span></div>
+            <span class="tag">Wedding Films</span>
+          </div>
+        </div>
+
+        <div class="reel-item" data-reveal data-delay="320">
+          <video src="public/assets/refs/AQPjHvOuLUV6QyyCnI3p-V2q9X-Vz9H7Acq_bpjCV5ULhhnZZrk9tQ-YKy_tHyWdVcbNAfF1Hcla62YtgJD3UANdEClTZSmvSJd3zyA.mp4"
+                 poster="public/assets/refs/587266488_18098091991889785_8715925391744596365_n.jpg"
+                 controls preload="none" aria-label="Production Reel"></video>
+          <div class="reel-item-info">
+            <div><h3>Production Reel</h3><span class="tag">Mumbai · 2025</span></div>
+            <span class="tag">Production</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="home-cta-strip">
+    <div class="container" style="max-width:680px;text-align:center;">
+      <p class="t-label mb-md" style="justify-content:center;" data-reveal>Commission a Film</p>
+      <h2 class="t-h2 mb-md" data-reveal>Ready to see<br><em>your story in motion?</em></h2>
+      <button class="btn btn-primary js-open-enquiry" data-reveal>Start a Project →</button>
+    </div>
+  </section>
+
+  <div id="footer-root"></div>
+  <script src="src/js/shared.js"></script>
+  <script>
+    EM.renderNav('showreel.html');
+    EM.renderFooter();
+    EM.renderEnquiryModal();
+    EM.initAll();
+    EM.initShowreel();
+  </script>
+</body>
+</html>

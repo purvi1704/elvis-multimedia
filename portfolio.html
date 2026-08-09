@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Elvis Multimedia | Photography & Film, Mumbai</title>
+  <meta name="description" content="Portfolio of Elvis Multimedia — wedding photography, wedding films, portraits, events and commercial work. Based in Mumbai."/>
+  <link rel="icon" type="image/jpeg" href="public/assets/elvis_logo_badge.jpg"/>
+  <link rel="stylesheet" href="src/css/styles.css"/>
+</head>
+<body>
+  <div id="nav-root"></div>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="t-label mb-md" data-reveal>Portfolio</p>
+      <h1 class="t-display" data-reveal data-delay="80">The work.</h1>
+      <p class="t-body mt-md" style="max-width:520px;" data-reveal data-delay="160">
+        A selection of photography, film and visual production by Elvis Multimedia.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="portfolio-filters" id="portfolio-filters"></div>
+      <div class="portfolio-grid" id="portfolio-grid"></div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Portfolio item viewer">
+    <div class="lightbox-inner">
+      <div class="lightbox-media" id="lightbox-media">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close">&#215;</button>
+      </div>
+      <div class="lightbox-detail">
+        <p class="lightbox-cat" id="lb-cat"></p>
+        <h2 id="lb-title"></h2>
+        <p class="lightbox-meta" id="lb-meta"></p>
+        <p class="lightbox-desc" id="lb-desc"></p>
+        <div style="margin-top:auto;padding-top:32px;">
+          <button class="btn btn-ghost js-open-enquiry" style="width:100%;">Start a Project →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section style="padding:80px 0;text-align:center;background:var(--forest);">
+    <div class="container" style="max-width:600px;">
+      <p class="t-label mb-md" style="justify-content:center;" data-reveal>Work With Us</p>
+      <h2 class="t-h2 mb-md" data-reveal><em>Like what you see?</em></h2>
+      <button class="btn btn-primary js-open-enquiry" data-reveal>Start a Project →</button>
+    </div>
+  </section>
+
+  <div id="footer-root"></div>
+  <script src="src/js/shared.js"></script>
+  <script>
+    EM.renderNav('portfolio.html');
+    EM.renderFooter();
+    EM.renderEnquiryModal();
+    EM.initAll();
+    EM.initPortfolio();
+  </script>
+</body>
+</html>
